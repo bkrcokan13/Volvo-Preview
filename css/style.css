@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+.main_navbar__items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main_navbar__item a{
+    text-decoration: none;
+    padding: 6px;
+    color: #333;
+    font-family: "Open Sans";
+}
+
+.main_navbar__item a:hover {
+    transition: 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+
+/* Hero */
+#hero {
+    position: relative;
+    background-image: url("/img/picture-1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 600px;
+}
+
+.hero_header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    padding: 25px 25px 10px 25px;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 8px;
+}
+
+.hero_header h1 {
+    font-family: "Lato";
+    color: #0a0a0ae1;
+    font-size: 75px;
+    
+}
+
+.hero_header p {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #0a0a0ae1;
+}
+
+.hero_header a {
+    margin: 15px 0;
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgb(102, 102, 102);
+
+}
+
+.hero_header a:hover{
+    background-color: #001322;
+    color: white;
+    transition: 0.8s linear;
+
+}
+
+#specs {
+    position: relative;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+    width: 100%;
+}   
+.spec {
+    height: 700px;
+    width: 100%;
+    margin: 4px 0;
+}
+
+
+
+.best {
+    position: relative;
+    background-image: url("/img/picture-3.jpg");
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.best h1 {
+    font-family: "Lato";
+    font-size: 60px;
+    color: rgb(230, 230, 230);
+}
+
+.spec-box {
+    background-color: rgba(255, 255, 255, 0.692);
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.spec-box h1 {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #000000;
+}
+.spec-box p {
+    margin: 4px 0;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.normal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 350px;
+    background-color: #8080800e;
+   
+}
+
+.normal_picture {
+    position: relative;
+    width: 50%;
+    background-image: url('/img/picture-5.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.block-box {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.specs_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.table_spec {
+    font-family: "Open Sans";
+    width: 80%;
+    
+    border-collapse: collapse;
+}
+
+.table_spec th,td {
+    border: 4px ridge rgb(19, 19, 19);
+    outline-style: initial;
+    border-radius: 10px;
+    color: rgb(51, 51, 51);
+    padding: 6px;
+}
+
+.table_spec th {
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 30px;
+}
+
+.table_spec tr {
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: center;
+}
+
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+
+
+}
+
+.galery_header {
+    position: relative;
+    background-color: rgb(170, 170, 170);
+    background-image: url("/img/picture-4.jpg");
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2px;
+    width: 25%;
+    height: 300px;
+}
+
+
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 500px;
+    width: 80%;
+    margin: 2px;
+}
+
+.pictures img {
+    width: 340px;
+    height: 240px;
+}
+
+.pictures img:hover {
+    transform: rotateX(10deg);
+    transform: rotateY(10deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.918);
+}
+
+
+
+
+
+
+
+
